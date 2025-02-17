@@ -1,5 +1,4 @@
-const { expect } = require("chai");
-const { capitalize, reverse } = require("./utils");
+const { capitalize, reverseString } = require("./utils");
 
 test("Capitalize First Letter", () => {
   expect(capitalize("hello")).toBe("Hello");
