@@ -3,6 +3,7 @@ const {
   reverseString,
   calculator,
   caesarCipher,
+  analyzeArray,
 } = require("./utils");
 
 test("Capitalize First Letter", () => {
@@ -27,4 +28,13 @@ test("caesar cipher", () => {
   expect(caesarCipher("xyz", 3)).toBe("abc");
   // Case preservation & punctuation
   expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});
+
+test("analyze array", () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
 });
